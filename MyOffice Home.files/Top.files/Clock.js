@@ -1,4 +1,5 @@
 ﻿function Clock() {
+	
 	var date = new Date();
 	this.year = date.getFullYear();
 	this.month = date.getMonth() + 1;
