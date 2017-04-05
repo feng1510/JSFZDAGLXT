@@ -22,7 +22,7 @@ style="BACKGROUND-POSITION-Y: -120px; BACKGROUND-IMAGE: url(../images/bg.gif); B
     <tr>
       <td width="10" height="29"><img src="Left.files/bg_left_tl.gif"></td>
       <td 
-    style="FONT-SIZE: 18px; BACKGROUND-IMAGE: url(../images/bg_left_tc.gif); COLOR: black; FONT-FAMILY: system">主菜单</td>
+    style="FONT-SIZE: 18px; BACKGROUND-IMAGE: url(../images/bg_left_tc.gif); COLOR: black; FONT-FAMILY: system">系统菜单</td>
       <td width="10"><img src="Left.files/bg_left_tr.gif"></td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ var tree = null;
 	root.add(fun1);
 	
 	var fun2 = new TreeNode('信息管理');
-	var fun2_1 = new TreeNode('增加新教师', 'AddNewTeacher.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
+	var fun2_1 = new TreeNode('增加新教师信息', 'AddNewTeacher.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
 	fun2.add(fun2_1);
 	var fun2_2 = new TreeNode('修改教师信息', 'EditInfo.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
 	fun2.add(fun2_2);
@@ -71,9 +71,11 @@ var tree = null;
 	root.add(fun3);
 	
 	var fun4 = new TreeNode('消息系统');
-	var fun4_1 = new TreeNode('信箱', 'MessageMgr.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
+	var fun4_0 = new TreeNode('发送信息', 'SendMsg.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
+	fun4.add(fun4_0);
+	var fun4_1 = new TreeNode('信箱', 'MsgMgr.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
 	fun4.add(fun4_1);
-	var fun4_2 = new TreeNode('回收站', 'MailBox.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
+	var fun4_2 = new TreeNode('回收站', 'RecycleBin.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
 	fun4.add(fun4_2);
 	root.add(fun4);
 	
@@ -87,6 +89,8 @@ var tree = null;
 	root.add(fun5);
 	
 	var fun6 = new TreeNode('系统管理');
+	var fun6_0 = new TreeNode('修改密码', 'ChangePassword.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
+	fun6.add(fun6_0);
 	var fun6_1 = new TreeNode('登录日志', 'SignInOrOut.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
 	fun6.add(fun6_1);
 	var fun6_2 = new TreeNode('操作日志', 'HistoryQuery.aspx', 'tree_node.gif', null, 'tree_node.gif', null);
